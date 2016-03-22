@@ -1,0 +1,27 @@
+<ion-view title="Profile">
+    <ion-content overflow-scroll="true" padding="true"  class="has-header">
+      <div class="row">
+        <div class="col">
+          <img src="{{auth.profile.picture}}" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form name="userProfile">
+            <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input type="text" placeholder="Enter your first name" ng-model="auth.profile.given_name" ng-minlength="1" required />
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input type="text" placeholder="Enter your last name" ng-model="auth.profile.family_name" ng-minlength="1" required />
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="email" placeholder="Enter your email" ng-model="auth.profile.email" required />
+            </label>
+          </form>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

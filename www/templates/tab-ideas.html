@@ -1,0 +1,11 @@
+<ion-view title="My Ideas">
+    <ion-content overflow-scroll="true" padding="true"  class="has-header has-footer">
+        <button class="button button-full button-dark" ng-click="addNew()">Add New</button>
+        <ion-list>
+            <ion-item class="item" ng-repeat="idea in ideas">
+              <span>{{idea.name}}</span>
+            </ion-item>
+        </ion-list>
+      <span ng-if="ideas.length < 1">You have not entered any ideas</span>
+    </ion-content>
+</ion-view>
